@@ -73,7 +73,7 @@ font-weight: 400;
     color: #0E53F6;
 }
 footer{
-    border: 1px solid #000000;
+    border-top: 1px solid #000000;
     padding: 30px;
 }
 nav{
