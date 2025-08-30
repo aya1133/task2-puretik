@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page7</title>
+    <link rel="stylesheet" href="style7.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container">
+        <div class="header">
+          <nav>
+            <div class="logo">LOGO</div>
+
+            <ul>
+              <li>
+                <a href="#"> home</a>
+              </li>
+              <li>
+                <a href="#"> About</a>
+              </li>
+              <li>
+                <a href="#"> sitteng</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="herotext">
+          <h1>Explore. Learn. Master.</h1>
+          <p>Learn anywhere, anytime.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="grid-cards">
+        <div class="card">
+          <div class="img"></div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Read More</p>
+        </div>
+
+        <div class="card">
+          <div class="img"></div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Read More</p>
+        </div>
+
+        <div class="card">
+          <div class="img"></div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Read More</p>
+        </div>
+
+        <div class="card">
+          <div class="img"></div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Read More</p>
+        </div>
+
+        <div class="card">
+          <div class="img"></div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Read More</p>
+        </div>
+
+        <div class="card">
+          <div class="img"></div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Read More</p>
+        </div>
+
+        <div class="card">
+          <div class="img"></div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Read More</p>
+        </div>
+
+        <div class="card">
+          <div class="img"></div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Read More</p>
+        </div>
+
+        <div class="card">
+          <div class="img"></div>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Read More</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <nav>
+          <div class="copyright">Puretik 2024</div>
+          <div class="rings">
+            <div class="ring2"></div>
+            <div class="ring2"></div>
+            <div class="ring2"></div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+ <script>
+    const pages = [
+    "index.html",
+    "index2.html",
+    "index3.html",
+    "index4.html",
+    "index5.html",
+    "index6.html",
+    "index7.html",
+    "index8.html",
+    "index9.html",
+    "index10.html"
+  ];
+
+  // الحصول على اسم الصفحة الحالية
+  const current = window.location.pathname.split("/").pop();
+
+  // تحديد الصفحة التالية
+  const currentIndex = pages.indexOf(current);
+  const nextIndex = currentIndex + 1;
+
+  // إذا هناك صفحة تالية، عرض الزر
+  if (nextIndex < pages.length) {
+    const btn = document.createElement("button");
+    btn.textContent = "Next";
+    
+    // تصميم الزر (تقدر تعدل حسب التصميم)
+    btn.style.position = "fixed";
+    btn.style.bottom = "20px";
+    btn.style.right = "20px";
+    btn.style.padding = "10px 20px";
+    btn.style.backgroundColor = "#007BFF";
+    btn.style.color = "#fff";
+    btn.style.border = "none";
+    btn.style.borderRadius = "5px";
+    btn.style.cursor = "pointer";
+    btn.style.fontSize = "16px";
+    btn.style.zIndex = "999";
+
+    btn.addEventListener("click", () => {
+      window.location.href = pages[nextIndex];
+    });
+
+    document.body.appendChild(btn);
+  }
+</script>
+
+  </body>
+</html>
